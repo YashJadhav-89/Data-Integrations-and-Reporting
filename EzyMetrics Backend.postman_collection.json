@@ -1,0 +1,109 @@
+{
+	"info": {
+		"_postman_id": "a91bb3cc-3c54-4baf-b6c4-e627af4a65a1",
+		"name": "EzyMetrics Backend",
+		"description": "Collection of API endpoints for EzyMetrics backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28731552"
+	},
+	"item": [
+		{
+			"name": "Get Leads",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/api/leads",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"leads"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Campaigns",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/api/campaigns",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"campaigns"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Generate CSV Report",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/report/csv",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"report",
+						"csv"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Generate PDF Report",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/report/pdf",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"report",
+						"pdf"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Send Alert Email",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"condition\": true\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/alerts",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"alerts"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
